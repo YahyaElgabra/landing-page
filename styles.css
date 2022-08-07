@@ -19,8 +19,8 @@ a {
 .hero {
     background: #1F2937;
     padding: 10px 200px;
-    min-height: 50vh;
-    flex: 3;
+    min-height: 10vh;
+    flex: 1;
 }
 
 .hero h1 {
@@ -29,7 +29,7 @@ a {
     color: #F9FAF8;
 }
 
-.hero p, .hero a, .footer {
+.hero p, .hero a, .footer, .subscribe p {
     font-size: 18px;
     color: #E5E7EB;
 }
@@ -73,8 +73,7 @@ button {
 .body {
     display: flex;
     flex-direction: column;
-    padding: 0 200px;
-    min-height: 100vh;
+    min-height: 10vh;
     flex: 3;
 }
 
@@ -82,20 +81,76 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0 200px;
+    flex: 1;
 }
 
-.quotes {
+.element {
     display: flex;
+    width: 200px;
+    flex-flow: column wrap;
+    padding: 10px;
+    text-align: center;
+    margin: 0 20px;
+    color: #1F2937;
+}
+
+.info h2 {
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1F2937;
+}
+
+.info img {
+    width: 200px;
+    border: 2px solid #3882F6;
+    border-radius: 5px;
+}
+
+.quote-section {
+    display: flex;
+    flex-flow: column wrap;
+    background-color: #e5e7eb;
+    padding: 0 500px;
+    flex: 1;
+}
+
+.quote {
+    font-size: 36px;
+    color: #1f2937;
+    font-style: italic;
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
 
 .author {
     text-align: end;
+    padding-top: 0;
+    margin-top: 0;
+    font-weight: bold;
+}
+
+.minimize {
+    padding: 100px 200px;
+    flex: 1;
 }
 
 .subscribe {
     display: flex;
     justify-content: space;
+    background-color: #3882f6;
+    border-radius: 5px;
+    justify-content: space-around;
+    padding: 24px;
+}
 
+.subscribe h2 {
+    color: white;
+}
+
+.subscribe button {
+    border: 1px solid white;
+    align-self: center;
 }
 
 .footer {
